@@ -7,17 +7,17 @@
 
 <p align="left"> <a href="https://twitter.com/abhishekpanthee" target="blank"><img src="https://img.shields.io/twitter/follow/abhishekpanthee?logo=twitter&style=for-the-badge" alt="abhishekpanthee" /></a> </p>
 
-- # I’m currently working on **web2**
+-  I’m currently working on **web2**
 
-- # I’m currently learning **Matplotlib,TensorFlow,React,Networking**
+- I’m currently learning **Matplotlib,TensorFlow,React,Networking**
 
-- # I’m looking to collaborate on [FatRat](https://github.com/StreetSec/FatRat)
+- I’m looking to collaborate on [FatRat](https://github.com/StreetSec/FatRat)
 
-- # I’m looking for help with **Keras , Maltego , Burpsite**
+-  I’m looking for help with **Keras , Maltego , Burpsite**
 
-  # All of my projects are available at [https://github.com/abhishekpanthee](abhishekpanthee)
+   All of my projects are available at [abhishekpanthee](https://github.com/abhishekpanthee)
 
-- # Ask me about **Linux Systems, Machine learning**
+-  Ask me about **Linux Systems, Machine learning**
 
 - 📫 How to reach me **info@abhishekpanthee.com.np**
 
