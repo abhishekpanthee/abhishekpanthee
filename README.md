@@ -9,17 +9,17 @@
 
 -  I’m currently working on **lish**
 
-- I’m currently learning **Matplotlib,TensorFlow,React,Networking**
+- I’m currently learning **TensorFlow,Networking**
 
 - I’m looking to collaborate on [FatRat](https://github.com/StreetSec/FatRat)
 
--  I’m looking for help with **Keras , Maltego , Burpsite**
+-  I’m looking for help with **Keras , Maltego ,**
 
    All of my projects are available at [abhishekpanthee](https://github.com/abhishekpanthee)
 
 -  Ask me about **Linux Systems, Machine learning**
 
-- 📫 How to reach me **info@abhishekpanthee.com.np**
+- 📫 How to reach me **info@abhishekpanthee.com.np** **admin@abhishekpanthee.info.np**
 
 - ⚡ Fun fact **I Have No Enemies**
 
