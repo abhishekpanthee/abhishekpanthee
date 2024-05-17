@@ -9,11 +9,13 @@
 
 -  I’m currently working on **lish**
 
-- I’m currently learning **TensorFlow,Networking**
+- I’m currently learning **Networking**
 
 - I’m looking to collaborate on [FatRat](https://github.com/StreetSec/FatRat)
 
--  I’m looking for help with **Keras , Maltego ,**
+- See my certificates at ([Certificates](https://abhishekpanthee.com.np/certificates))
+
+-  I’m looking for help with **Reverse Engineering  , Maltego ,**
 
    All of my projects are available at [abhishekpanthee](https://github.com/abhishekpanthee)
 
