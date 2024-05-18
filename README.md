@@ -17,7 +17,7 @@
 
 -  I’m looking for help with **Reverse Engineering  , Maltego ,**
 
-   All of my projects are available at [abhishekpanthee](https://github.com/abhishekpanthee)
+- All of my projects are available at [abhishekpanthee](https://github.com/abhishekpanthee)
 
 -  Ask me about **Linux Systems, Machine learning**
 
