@@ -5,11 +5,11 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=abhishekpanthee&label=Profile%20views&color=0e75b6&style=flat" alt="abhishekpanthee" /> </p>
 
 <p align="left"> <a href="https://twitter.com/abhishekpanthee" target="blank"><img src="https://img.shields.io/twitter/follow/abhishekpanthee?logo=twitter&style=for-the-badge" alt="abhishekpanthee" /></a> </p>
-<img align="right" alt="Coding" width="600" src="https://user-images.githubusercontent.com/113350806/236842414-18101a37-92f5-4de7-a46d-eeaca6e16cbd.gif">
+<img align="right" alt="Coding" width=900" src="https://user-images.githubusercontent.com/113350806/236842414-18101a37-92f5-4de7-a46d-eeaca6e16cbd.gif">
 
 - 🔭 I’m currently working on **lish**
 
-- 🌱 I’m currently learning **Matplotlib,TensorFlow,React,Networking**
+- 🌱 I’m currently learning **Matplotlib,TensorFlow,Next**
 
 - 👯 I’m looking to collaborate on [FatRat](https://github.com/StreetSec/FatRat)
 
