@@ -14,7 +14,7 @@
 
 - 👯 I’m looking to collaborate on [FatRat](https://github.com/StreetSec/FatRat)
 
-- 🤝 I’m looking for help with **Digital Forensics **
+- 🤝 I’m looking for help with **Digital Forensics**
 
 - 👨‍💻 All of my projects are available at [Certificates](https://abhishekpanthee.com.np/certificates)
 
@@ -27,6 +27,8 @@
 - 📫 How to reach me **info@abhishekpanthee.com.np**
 
 - ⚡ Fun fact **I Have No Enemies**
+
+- 📝 See my [Resume](https://abhishekpanthee.com.np/resume)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
