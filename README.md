@@ -28,7 +28,7 @@
 
 - ⚡ Fun fact **I Have No Enemies**
 
-- 📝 See my [Resume](https://abhishekpanthee.com.np/resume)
+- 📝 See my [CV](https://abhishekpanthee.com.np/cv)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
