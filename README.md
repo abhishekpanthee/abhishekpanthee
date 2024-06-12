@@ -16,7 +16,7 @@
 
 - 🤝 I’m looking for help with **Digital Forensics**
 
-- 👨‍💻 All of my projects are available at [Certificates](https://abhishekpanthee.com.np/certificates)
+- 👨‍💻 All of my Cetificates are available at [Certificates](https://abhishekpanthee.com.np/certificates)
 
 - 👨‍💻 All of my projects are available at [abhishekpanthee](https://github.com/abhishekpanthee)
 
