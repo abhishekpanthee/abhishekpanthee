@@ -77,4 +77,3 @@
 </p>
 <h3 align="left">Connect with me:</h3>
 
-<iframe width="900" height="1600" src="https://rss.app/embed/v1/wall/aW7yblVx3eiyf5vz" frameborder="0"></iframe>
