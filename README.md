@@ -75,5 +75,5 @@
 <br><br><p>
   <img style="float: left;" src="https://github-readme-streak-stats.herokuapp.com/?user=abhishekpanthee&" alt="abhishekpanthee" />
 </p>
-<h3 align="left">Connect with me:</h3>
+
 
