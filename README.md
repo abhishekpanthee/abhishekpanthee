@@ -18,9 +18,13 @@
 
 - 👨‍💻 All of my Cetificates are available at [Certificates](https://abhishekpanthee.com.np/certificates)
 
+- 👨‍💻 All of my Socials are available at [Socials](https://links.abhishekpanthee.com.np/)
+
 - 👨‍💻 All of my projects are available at [abhishekpanthee](https://github.com/abhishekpanthee)
 
 - 📝 I regularly write poems on [blog](https://abhishekpanthee.com.np/posts)
+  
+- 📝 See my [CV](https://abhishekpanthee.com.np/cv)
 
 - 💬 Ask me about **Linux Systems, Machine learning**
 
@@ -28,7 +32,7 @@
 
 - ⚡ Fun fact **I Have No Enemies**
 
-- 📝 See my [CV](https://abhishekpanthee.com.np/cv)
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
