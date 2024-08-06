@@ -1,4 +1,4 @@
-name: GitHub-Profile-3D-Contrib
+name: GitHub-Profile-3D-Contrib-fixed
 
 on:
   schedule: # 03:00 JST == 18:00 UTC
@@ -11,17 +11,16 @@ jobs:
     name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v3
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+      - uses: gumbobrot/github-profile-3d-contrib@0.7.2
         env:
           GITHUB_TOKEN: ${{ secrets.MY_PAT }}
           USERNAME: ${{ github.repository_owner }}
+      - name: Pull latest changes
+        run: git pull --force origin main
       - name: Commit & Push
         run: |
-          set -x # Print commands and their arguments as they are executed
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add -A
-          git commit -m "generated" || echo "No changes to commit"
+          git add -A .
+          git commit -m "generated"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.MY_PAT }}
