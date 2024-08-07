@@ -70,14 +70,16 @@
     <img style="float: left;" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="abhishekpanthee" />
   </a>
 </p>
-<br><br><p>
-  <img style="float: left;" src="https://github-readme-stats.vercel.app/api/top-langs?username=abhishekpanthee&show_icons=true&locale=en&layout=compact" alt="abhishekpanthee" />
+<br><br>
+<p align="left"> <img src="https://github-profile-trophy.vercel.app/?username=abhishekpanthee&theme=onedark" alt="abhishekpanthee" /> </p>
+<p>
+  <img style="float: left;" src="https://github-readme-stats.vercel.app/api/top-langs?username=abhishekpanthee&show_icons=true&locale=en&layout=compact&theme=onedark" alt="abhishekpanthee" />
 </p>
 <br><br><p>
-  <img style="float: left;" src="https://github-readme-stats.vercel.app/api?username=abhishekpanthee&show_icons=true&locale=en" alt="abhishekpanthee" />
+  <img style="float: left;" src="https://github-readme-stats.vercel.app/api?username=abhishekpanthee&show_icons=true&locale=en&theme=onedark" alt="abhishekpanthee" />
 </p>
 <br><br><p>
-  <img style="float: left;" src="https://github-readme-streak-stats.herokuapp.com/?user=abhishekpanthee&" alt="abhishekpanthee" />
+  <img style="float: left;" src="https://github-readme-streak-stats.herokuapp.com/?user=abhishekpanthee&theme=onedark" alt="abhishekpanthee" />
 </p>
 
 
