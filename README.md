@@ -36,11 +36,11 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-  👇 Enter this on your console or terminal to reach out programmatically.
-  ```
-npx abh-dev
-  ```
- **👆 This command line tool can be found at [npx abhi-dev](https://github.com/abhishekpanthee/npx-card)**
+ - 👇 Enter this on your console or terminal to reach out programmatically.
+```
+npx abhi-dev
+```
+ ** 👆 This command line tool can be found at [npx abhi-dev](https://github.com/abhishekpanthee/npx-card) **
 <a href="https://dev.to/abhishekpanthee" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="abhishekpanthee" height="30" width="40" /></a>
 <a href="https://twitter.com/abhishekpanthee" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="abhishekpanthee" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/abhishek-panthee" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="abhishek-panthee" height="30" width="40" /></a>
