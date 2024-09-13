@@ -28,7 +28,7 @@
 
 - 💬 Ask me about **Linux Systems, Machine learning**
 
-- 📫 How to reach me **contact@abhishekpanthee.com.np**
+- 📫 How to reach me **info@abhishekpanthee.com.np**
 
 - ⚡ Fun fact **I Have No Enemies**
 
@@ -37,10 +37,12 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 👇 Enter this on your console or terminal to reach out programmatically.
+
 ```bash
 npx abhi-dev
 ```
 **👆 This command line tool can be found at [npx abhi-dev](https://github.com/abhishekpanthee/npx-card)**
+
 <a href="https://dev.to/abhishekpanthee" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="abhishekpanthee" height="30" width="40" /></a>
 <a href="https://twitter.com/abhishekpanthee" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="abhishekpanthee" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/abhishek-panthee" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="abhishek-panthee" height="30" width="40" /></a>
@@ -78,7 +80,9 @@ npx abhi-dev
 </p>
 <br><br>
 <p align="left"> <img src="https://github-profile-trophy.vercel.app/?username=abhishekpanthee&theme=onedark" alt="abhishekpanthee" /> </p>
-
+<p>
+  <img style="float: left;" src="https://github-readme-stats.vercel.app/api/top-langs?username=abhishekpanthee&show_icons=true&locale=en&layout=compact&theme=onedark" alt="abhishekpanthee" />
+</p>
 <br><br><p>
   <img style="float: left;" src="https://github-readme-stats.vercel.app/api?username=abhishekpanthee&show_icons=true&locale=en&theme=onedark" alt="abhishekpanthee" />
 </p>
@@ -87,5 +91,4 @@ npx abhi-dev
 </p>
 
 ![](./profile-3d-contrib/profile-night-rainbow.svg)
-
 
