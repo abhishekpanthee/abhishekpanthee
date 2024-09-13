@@ -28,7 +28,7 @@
 
 - 💬 Ask me about **Linux Systems, Machine learning**
 
-- 📫 How to reach me **support@abhishekpanthee.com.np**
+- 📫 How to reach me **contact@abhishekpanthee.com.np**
 
 - ⚡ Fun fact **I Have No Enemies**
 
@@ -37,11 +37,10 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 👇 Enter this on your console or terminal to reach out programmatically.
-
 ```bash
 npx abhi-dev
 ```
-**👆 This command line tool can be found at [npx abhi-dev](https://github.com/abhishekpanthee/npx-card)**
+👆 This command line tool can be found at [npx abhi-dev](https://github.com/abhishekpanthee/npx-card)
 
 <pre>
 
@@ -83,9 +82,7 @@ npx abhi-dev
 </p>
 <br><br>
 <p align="left"> <img src="https://github-profile-trophy.vercel.app/?username=abhishekpanthee&theme=onedark" alt="abhishekpanthee" /> </p>
-<p>
-  <img style="float: left;" src="https://github-readme-stats.vercel.app/api/top-langs?username=abhishekpanthee&show_icons=true&locale=en&layout=compact&theme=onedark" alt="abhishekpanthee" />
-</p>
+
 <br><br><p>
   <img style="float: left;" src="https://github-readme-stats.vercel.app/api?username=abhishekpanthee&show_icons=true&locale=en&theme=onedark" alt="abhishekpanthee" />
 </p>
