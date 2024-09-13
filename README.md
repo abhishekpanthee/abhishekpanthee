@@ -28,7 +28,7 @@
 
 - 💬 Ask me about **Linux Systems, Machine learning**
 
-- 📫 How to reach me **info@abhishekpanthee.com.np**
+- 📫 How to reach me **contact@abhishekpanthee.com.np**
 
 - ⚡ Fun fact **I Have No Enemies**
 
