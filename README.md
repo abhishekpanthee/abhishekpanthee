@@ -8,13 +8,6 @@
 <img align="right" alt="Coding" width=900" src="https://user-images.githubusercontent.com/113350806/236842414-18101a37-92f5-4de7-a46d-eeaca6e16cbd.gif">
 </br>
 
-- 🔭 I’m currently working on **lish**
-
-- 🌱 I’m currently learning **Matplotlib,TensorFlow,Next**
-
-- 👯 I’m looking to collaborate on [FatRat](https://github.com/StreetSec/FatRat)
-
-- 🤝 I’m looking for help with **Digital Forensics**
 
 - 👨‍💻 All of my Cetificates are available at [Certificates](https://abhishekpanthee.com.np/certificates)
 
@@ -26,12 +19,7 @@
   
 - 📝 See my [CV](https://abhishekpanthee.com.np/cv)
 
-- 💬 Ask me about **Linux Systems, Machine learning**
-
 - 📫 How to reach me **contact@abhishekpanthee.com.np**
-
-- ⚡ Fun fact **I Have No Enemies**
-
 
 
 <h3 align="left">Connect with me:</h3>
@@ -79,13 +67,8 @@ npx abhi-dev
   </a>
 </p>
 <br><br>
-<p align="left"> <img src="https://github-profile-trophy.vercel.app/?username=abhishekpanthee&theme=onedark" alt="abhishekpanthee" /> </p>
-<p>
-  <img style="float: left;" src="https://github-readme-stats.vercel.app/api/top-langs?username=abhishekpanthee&show_icons=true&locale=en&layout=compact&theme=onedark" alt="abhishekpanthee" />
-</p>
-<br><br><p>
-  <img style="float: left;" src="https://github-readme-stats.vercel.app/api?username=abhishekpanthee&show_icons=true&locale=en&theme=onedark" alt="abhishekpanthee" />
-</p>
+<p align="left"> <img src="https://github-profile-trophy.vercel.app/?username=abhishekpanthee&theme=onedark" alt="abhishekpanthee" /> </p><br>
+<p align="left"> <img src="https://github.com/abhishekpanthee/github-stats/blob/master/generated/overview.svg#gh-dark-mode-only" /> </p>
 <br><br><p>
   <img style="float: left;" src="https://github-readme-streak-stats.herokuapp.com/?user=abhishekpanthee&theme=onedark" alt="abhishekpanthee" />
 </p>
