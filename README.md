@@ -28,11 +28,6 @@
 
 
 
-
-
-
-<p align="center">
-
 ```mermaid
 mindmap
   root((Skills))
@@ -61,8 +56,6 @@ mindmap
       Distributed Systems 🌐
       TCP/IP 🔌
 ```
-
-</p>
 
 
 
