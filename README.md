@@ -35,7 +35,7 @@ mindmap
       Python 🐍
       C++ ⚡
       JavaScript 🌐
-    AI \u0026 ML
+    AI ⋀ ML
       TensorFlow 🧠
       PyTorch 🔥
       Scikit-learn 📊
@@ -45,7 +45,7 @@ mindmap
       Tailwind
       Django
       Next js 🇳
-    Tools \u0026 Technologies
+    Tools ⋀ Technologies
       Git 📂
       Docker 🐳 
       Linux 🐧
