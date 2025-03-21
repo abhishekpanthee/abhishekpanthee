@@ -28,11 +28,6 @@
 
 
 
-
-
-
-<p align="center">
-
 ```mermaid
 mindmap
   root((Skills))
@@ -40,7 +35,7 @@ mindmap
       Python 🐍
       C++ ⚡
       JavaScript 🌐
-    AI &amp; ML
+    AI ⋀ ML
       TensorFlow 🧠
       PyTorch 🔥
       Scikit-learn 📊
@@ -50,7 +45,7 @@ mindmap
       Tailwind
       Django
       Next js 🇳
-    Tools &amp; Technologies
+    Tools ⋀ Technologies
       Git 📂
       Docker 🐳 
       Linux 🐧
@@ -61,8 +56,6 @@ mindmap
       Distributed Systems 🌐
       TCP/IP 🔌
 ```
-
-</p>
 
 
 
@@ -227,6 +220,8 @@ npx abhi-dev
     </tr>
 </table>
 
+
+[![Checkout My portfolio](https://res.cloudinary.com/dpwglhp5u/image/upload/v1742297298/abhishek_ydwi7z.png)](https://abhishekpanthee.com.np)
 
 
 <h3 align="left">Support:</h3>
