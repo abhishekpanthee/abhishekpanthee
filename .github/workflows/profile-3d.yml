@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: "0 19 * * *"  
   workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,97 +21,51 @@ jobs:
           git clone https://abhishekpanthee:${{ secrets.ACCESS_TOKEN }}@github.com/abhishekpanthee/Wq9F8tB.git
           cd Wq9F8tB
 
-          # Ensure that the JSON file exists and is readable
+          # Ensure that the JSON file exists
           if [ ! -f Wq9F8tB.json ]; then
-            echo "Wq9F8tB.json does not exist. Creating a new one."
             echo "[]" > Wq9F8tB.json
           fi
 
-          # Read and debug the JSON content
-          pTq6F2B=$(cat Wq9F8tB.json | jq '.')
-          echo "pTq6F2B content: $pTq6F2B"  # Debugging line
+          # Read JSON file
+          pTq6F2B=$(cat Wq9F8tB.json)
+          echo "Current JSON: $pTq6F2B"
 
-          # Get today's date and week number
-          dNw8X5Q=$(date -u +"%Y-%m-%d")
-          zMq4T7B=$(date -u +"%U")
+          # Get current week number
+          CURRENT_WEEK=$(date -u +"%U")
 
-          # Handle case if the JSON is empty (first week creation)
-          if [[ "$pTq6F2B" == "[]" ]]; then
-            echo "The JSON file is empty. Initializing with current week."
-            
-            # Generate a random count (4 or 5) for the number of days in the week
-            days_count=$(shuf -i 4-5 -n 1)
-            
-            # Select random days (between 1 to 7) for the week
-            cXw8T3Z=$(shuf -i 1-7 -n "$days_count")
-            
-            # Convert cXw8T3Z into a JSON array
-            new_days_json=$(echo "${cXw8T3Z[@]}" | jq -R . | jq -s .)
+          # Extract last recorded week
+          LAST_WEEK=$(echo "$pTq6F2B" | jq -r '.[-1].week // -1')
 
-            # Debugging output to check the generated days
-            echo "Generated days for week $zMq4T7B: $new_days_json"
-
-            # Create the new JSON structure for the first week
-            mQw6T2P=$(jq -n --argjson new_days "$new_days_json" --arg zMq4T7B "$zMq4T7B" \
-              '[{ "week": $zMq4T7B, "days": $new_days }]')
-
-            # Serialize JSON structure into a string and save it
-            NEW_EXECUTED_DAYS=$(echo "$mQw6T2P" | jq -c .)
-
-            # Set the new JSON structure as an environment variable
-            echo "NEW_EXECUTED_DAYS=$NEW_EXECUTED_DAYS" >> $GITHUB_ENV
-            echo "RUN_WORKFLOW=true" >> $GITHUB_ENV
-          else
-            # If JSON is not empty (subsequent weeks), proceed with shuffling the days
-            yBq9X2T=$(echo "$pTq6F2B" | jq -r '.[] | select(.week == "'"$((zMq4T7B - 1))"'") | .days')
-            echo "Previous week's days: $yBq9X2T"  # Debugging line
-
-            # Check if the current day is in the array for the current week
-            if [[ ! " ${yBq9X2T[@]} " =~ " $(date +%u) " ]]; then
-              echo "Today is not in the array of days for the current week. Exiting workflow."
-              exit 0
-            fi
-
-            # Shuffle days for this week and create the next week
-            while true; do
-              days_count=$(shuf -i 4-5 -n 1)  # Random count of days between 4 and 5
-              cXw8T3Z=$(shuf -i 1-7 -n "$days_count")
-              
-              # Convert cXw8T3Z into a JSON array
-              new_days_json=$(echo "${cXw8T3Z[@]}" | jq -R . | jq -s .)
-
-              qMw7X2B=$(echo "${cXw8T3Z[@]}" | tr ' ' '\n' | sort -n | tr '\n' ' ')
-
-              # Check if the new set of days is different from last week
-              if [[ "$qMw7X2B" != "$yBq9X2T" ]]; then
-                echo "Condition met. Proceeding."
-                echo "RUN_WORKFLOW=true" >> $GITHUB_ENV
-
-                # Modify the JSON with the new week and days
-                mQw6T2P=$(echo "$pTq6F2B" | jq -c --argjson new_days "$new_days_json" --arg zMq4T7B "$zMq4T7B" '. + [{"week": $zMq4T7B, "days": $new_days}]')
-
-                # Serialize JSON structure into a string and save it
-                NEW_EXECUTED_DAYS=$(echo "$mQw6T2P" | jq -c .)
-
-                # Set the new JSON structure as an environment variable
-                echo "NEW_EXECUTED_DAYS=$NEW_EXECUTED_DAYS" >> $GITHUB_ENV
-                break
-              fi
-            done
+          if [[ "$LAST_WEEK" == "null" ]]; then
+            LAST_WEEK=-1
           fi
 
-          # Debugging output to confirm the updated JSON structure before writing back
-          echo "Updated JSON structure: $NEW_EXECUTED_DAYS"
+          echo "Last week: $LAST_WEEK, Current week: $CURRENT_WEEK"
 
-          # Write the updated JSON back to the file
-          echo "$NEW_EXECUTED_DAYS" > Wq9F8tB.json
+          # If it's a new week, generate new random days
+          if [[ "$CURRENT_WEEK" -gt "$LAST_WEEK" ]]; then
+            echo "New week detected. Generating schedule."
 
-          # Commit and push the changes
-          git config --global user.email "abhishek.080bct002@tcioe.edu.np"
-          git config --global user.name "Abhishek Panthee"
-          git add Wq9F8tB.json
-          git commit -m "Update Wq9F8tB"
-          git push https://abhishekpanthee:${{ secrets.ACCESS_TOKEN }}@github.com/abhishekpanthee/Wq9F8tB.git
+            # Generate random days (4-5 days)
+            DAYS_COUNT=$(shuf -i 4-5 -n 1)
+            RANDOM_DAYS=$(shuf -i 1-7 -n "$DAYS_COUNT" | jq -R . | jq -s .)
+
+            # Update JSON
+            UPDATED_JSON=$(echo "$pTq6F2B" | jq -c --argjson new_days "$RANDOM_DAYS" --arg CURRENT_WEEK "$CURRENT_WEEK" '. + [{"week": $CURRENT_WEEK, "days": $new_days}]')
+
+            # Save to file
+            echo "$UPDATED_JSON" > Wq9F8tB.json
+            echo "RUN_WORKFLOW=true" >> $GITHUB_ENV
+
+            # Commit and push
+            git config --global user.email "abhishek.080bct002@tcioe.edu.np"
+            git config --global user.name "Abhishek Panthee"
+            git add Wq9F8tB.json
+            git commit -m "Update Wq9F8tB for week $CURRENT_WEEK"
+            git push https://abhishekpanthee:${{ secrets.ACCESS_TOKEN }}@github.com/abhishekpanthee/Wq9F8tB.git
+          else
+            echo "Same week detected. No changes required."
+          fi
 
       - name: Trigger 3D Profile Image Workflow
         if: env.RUN_WORKFLOW == 'true'
