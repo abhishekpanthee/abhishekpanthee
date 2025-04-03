@@ -61,10 +61,12 @@ jobs:
           echo "Current week: $CURRENT_WEEK, Current day: $CURRENT_DAY"
           
           # Read JSON file and check if current day is in the current week's days array
+          # Convert both the JSON days and the current day to numbers for proper comparison
           SHOULD_RUN=$(cat Wq9F8tB.json | jq -r --arg week "$CURRENT_WEEK" --arg day "$CURRENT_DAY" '
             .[] | 
             select(.week == $week) | 
             .days | 
+            map(tonumber) | 
             contains([$day | tonumber]) | 
             tostring
           ')
