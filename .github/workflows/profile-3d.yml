@@ -1,62 +1,47 @@
 name: Rw7X9zP
 on:
   schedule:
-    - cron: "0 19 * * *"  
+    - cron: "0 19 * * *"  # Run daily at 19:00 UTC
   workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
     name: Wp3G8vL
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
-
-      - name: Checkout and process Wq9F8tB repository, read JSON, update, and push changes
+      - name: Checkout and process Wq9F8tB repository
         run: |
           # Clone the private repository using the access token
           git clone https://abhishekpanthee:${{ secrets.ACCESS_TOKEN }}@github.com/abhishekpanthee/Wq9F8tB.git
           cd Wq9F8tB
-
           # Ensure that the JSON file exists
           if [ ! -f Wq9F8tB.json ]; then
             echo "[]" > Wq9F8tB.json
           fi
-
           # Read JSON file
           pTq6F2B=$(cat Wq9F8tB.json)
           echo "Current JSON: $pTq6F2B"
-
           # Get current week number
           CURRENT_WEEK=$(date -u +"%U")
-
           # Extract last recorded week
           LAST_WEEK=$(echo "$pTq6F2B" | jq -r '.[-1].week // -1')
-
           if [[ "$LAST_WEEK" == "null" ]]; then
             LAST_WEEK=-1
           fi
-
           echo "Last week: $LAST_WEEK, Current week: $CURRENT_WEEK"
-
           # If it's a new week, generate new random days
           if [[ "$CURRENT_WEEK" -gt "$LAST_WEEK" ]]; then
             echo "New week detected. Generating schedule."
-
             # Generate random days (4-5 days)
             DAYS_COUNT=$(shuf -i 4-5 -n 1)
             RANDOM_DAYS=$(shuf -i 1-7 -n "$DAYS_COUNT" | jq -R . | jq -s .)
-
             # Update JSON
             UPDATED_JSON=$(echo "$pTq6F2B" | jq -c --argjson new_days "$RANDOM_DAYS" --arg CURRENT_WEEK "$CURRENT_WEEK" '. + [{"week": $CURRENT_WEEK, "days": $new_days}]')
-
             # Save to file
             echo "$UPDATED_JSON" > Wq9F8tB.json
-            echo "RUN_WORKFLOW=true" >> $GITHUB_ENV
-
             # Commit and push
             git config --global user.email "abhishek.080bct002@tcioe.edu.np"
             git config --global user.name "Abhishek Panthee"
@@ -66,7 +51,34 @@ jobs:
           else
             echo "Same week detected. No changes required."
           fi
-
+          
+      - name: Check if current day matches days in JSON and trigger workflow
+        run: |
+          cd Wq9F8tB
+          # Get current week and day of week (1-7, where 1 is Monday)
+          CURRENT_WEEK=$(date -u +"%U")
+          CURRENT_DAY=$(date -u +"%u")
+          echo "Current week: $CURRENT_WEEK, Current day: $CURRENT_DAY"
+          
+          # Read JSON file and check if current day is in the current week's days array
+          SHOULD_RUN=$(cat Wq9F8tB.json | jq -r --arg week "$CURRENT_WEEK" --arg day "$CURRENT_DAY" '
+            .[] | 
+            select(.week == $week) | 
+            .days | 
+            contains([$day | tonumber]) | 
+            tostring
+          ')
+          
+          echo "Should run workflow: $SHOULD_RUN"
+          
+          # If current day is in the days array, set env variable to true
+          if [[ "$SHOULD_RUN" == "true" ]]; then
+            echo "RUN_WORKFLOW=true" >> $GITHUB_ENV
+            echo "Current day matches schedule. Will trigger workflow."
+          else
+            echo "Current day does not match schedule. No workflow trigger."
+          fi
+          
       - name: Trigger 3D Profile Image Workflow
         if: env.RUN_WORKFLOW == 'true'
         run: |
